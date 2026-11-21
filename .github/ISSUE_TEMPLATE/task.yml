@@ -1,0 +1,38 @@
+name: Task
+description: One unit of work from docs/09-plan.md (one issue = one branch = one pull request)
+title: "P?-T?: "
+body:
+  - type: input
+    id: task
+    attributes:
+      label: Task ID and stories
+      description: Task ID from docs/09-plan.md and the story IDs from docs/01-requirements.md
+      placeholder: "P3-T2 — FR-05, FR-06"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What exists when this task is finished?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Conditions that can be checked. Copy the "Done when" text of the plan and the acceptance criteria that apply.
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documents to read
+      placeholder: "AGENTS.md, docs/04-api.md (Posts), docs/03-data-model.md (posts)"
+    validations:
+      required: true
+  - type: textarea
+    id: out
+    attributes:
+      label: Out of scope
+      description: What this task must not change

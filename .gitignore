@@ -1,0 +1,45 @@
+# Secrets and local configuration — never commit
+.env
+.env.*
+!.env.example
+!*.env.example
+*.pem
+*.key
+id_ed25519*
+spm-deploy-key*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Data and backups
+backups/
+uploads/
+*.sql.gz
+*.dump
+
+# Editors and OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# AI tool local state (shared rules live in AGENTS.md)
+.claude/settings.local.json
+CLAUDE.local.md
