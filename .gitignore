@@ -43,3 +43,11 @@ Thumbs.db
 # AI tool local state (shared rules live in AGENTS.md)
 .claude/settings.local.json
 CLAUDE.local.md
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
